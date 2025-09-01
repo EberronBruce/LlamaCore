@@ -1,4 +1,4 @@
-# ``LlamaCore``
+# `LlamaCore`
 
 A lightweight Swift interface for managing llama.cpp models, contexts, and inference pipelines.
 
@@ -7,15 +7,20 @@ A lightweight Swift interface for managing llama.cpp models, contexts, and infer
 `LlamaCore` builds on top of [llama.cpp](https://github.com/ggerganov/llama.cpp),  
 Georgi Gerganov’s high-performance C/C++ inference engine for running LLaMA and other large language models efficiently on CPU and mobile devices.
 
-`LlamaCore` provides the core functionality needed to integrate and run Large Language Models (LLMs) locally on iOS.  
-It is responsible for:
+This package was developed and tested alongside my demo project  
+[`Llama_cpp_iOS_Demo`](https://github.com/EberronBruce/Llama_cpp_iOS_Demo),  
+which shows how to embed `llama.cpp` directly into an iOS app and experiment with model inference on-device.  
 
-- Loading and unloading models safely into memory.  
-- Managing llama.cpp contexts and sampling.  
-- Handling inference requests (single-shot or streaming).  
-- Monitoring memory usage and responding to warnings.  
+`LlamaCore` extracts the reusable logic from that demo and organizes it into a Swift Package for easier integration into other apps.
 
-This layer is designed to be lightweight and reusable so that higher-level abstractions (such as `LlamaState` or UI controllers) can interact with it without worrying about raw llama.cpp calls.  
+## Features
+
+- Loading and unloading models safely into memory  
+- Managing llama.cpp contexts and sampling  
+- Handling inference requests (single-shot or streaming)  
+- Monitoring memory usage and responding to warnings  
+
+This layer is designed to be lightweight and reusable so that higher-level abstractions (such as `LlamaState` or UI controllers) can interact with it without worrying about raw llama.cpp calls.
 
 ## Topics
 
